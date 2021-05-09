@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" >
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
+    <script src="angular.min.js">
+    </script>
+    <script src="app.js"></script>
+    <title>Angular JS</title>
+  </head>
+  <body ng-app="myFirstApp">
+    <h1>Text Calcuator</h1>
+    <div ng-controller="MyFirstController">
+      <div>
+        Your Name
+        <input type="text"
+          ng-model="name"
+          ng-keyup="displayvalue();">
+      </div>
+      <div >Value of the test inputed is: {{totalvalue}} </div>
+    </div>
   </body>
 </html>
